@@ -9,7 +9,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         HttpServer server = HttpServer.create(new InetSocketAddress(8081), 0);
         server.createContext("/", exchange -> {
-            String response = "Hello Jenkins!";
+            String response = "Hello friends my name is lsdileeproyal!";
             exchange.sendResponseHeaders(200, response.length());
             OutputStream os = exchange.getResponseBody();
             os.write(response.getBytes());
